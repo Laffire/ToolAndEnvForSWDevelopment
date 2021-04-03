@@ -3,7 +3,7 @@
 namespace Practice_02
 {
     public class EmployeeService
-    {
+    { 
         private const decimal BASIC_SALARY = 10000000;
 
         public static decimal CalculateSalary(EmployeeType employeeType, int years)
@@ -26,6 +26,10 @@ namespace Practice_02
                 factor = 2;
             }
             // TODO: if employee is Expert, set factor = 3
+            else if (employeeType == EmployeeType.Expert)
+            {
+            factor = 3;
+            }
 
             var salary = BASIC_SALARY * years * factor;
 
