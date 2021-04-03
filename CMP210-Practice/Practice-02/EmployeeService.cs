@@ -25,7 +25,6 @@ namespace Practice_02
             {
                 factor = 2;
             }
-            // TODO: if employee is Expert, set factor = 3
             else if (employeeType == EmployeeType.Expert)
             {
             factor = 3;
